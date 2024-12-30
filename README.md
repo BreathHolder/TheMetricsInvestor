@@ -1,3 +1,3 @@
 # The Metrics Investor
 
-Attempting to create and manage a 2025 blog, testing out an investing strategy.
+Discover data-driven investment strategies with The Metrics Investor. Follow our journey as we use a custom stock screener to build a high-growth portfolio with consistent monthly updates and actionable insights.
