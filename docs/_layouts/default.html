@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    {% seo %}
+{% seo %}
     <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
     <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -15,11 +15,11 @@
   <body>
     <div class="wrapper">
       <header>
-        <h1>
-          <a href="{{ "/" | absolute_url }}">
-            <img src="{{ "/assets/images/logo.png" | relative_url }}" alt="The Metrics Investor Logo" style="max-height: 80px;">
-          </a>
-        </h1>
+        <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
+
+        {% if site.logo %}
+          <img src="{{site.logo | relative_url}}" alt="The Metrics Investor Logo" />
+        {% endif %}
 
         <p>{{ site.description | default: site.github.project_tagline }}</p>
 
@@ -39,30 +39,11 @@
         </ul>
         {% endif %}
       </header>
-<!-- 
-      <div class="main-container">
-        <!-- Sidebar -->
-        <aside class="sidebar">
-          <h2>Timeline of Posts</h2>
-          <ul class="timeline">
-            {% for post in site.posts %}
-              {% if post.date <= site.time %}
-                <li>
-                  <a href="{{ post.url }}">{{ post.title }}</a>
-                  <br>
-                  <small>{{ post.date | date: "%B %d, %Y" }}</small>
-                </li>
-              {% endif %}
-            {% endfor %}
-          </ul>
-        </aside>
+      <section>
 
-        <!-- Main Content -->
-        <section class="content">
-          {{ content }}
-        </section>
-      </div>
+      {{ content }}
 
+      </section>
       <footer>
         {% if site.github.is_project_page %}
         <p>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
