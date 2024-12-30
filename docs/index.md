@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Welcome
+title: Welcome to The Metrics Investor
 ---
 
 # Welcome to The Metrics Investor
