@@ -16,3 +16,38 @@ ul li a {
     font-weight: bold;
     text-decoration: none;
 }
+
+.main-container {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .sidebar {
+    width: 25%;
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-right: 1px solid #ddd;
+  }
+  
+  .content {
+    width: 75%;
+  }
+  
+  .timeline {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .timeline li {
+    margin-bottom: 10px;
+  }
+  
+  .timeline a {
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .timeline small {
+    display: block;
+    color: #6c757d;
+  }
