@@ -21,7 +21,6 @@
             <img src="{{ site.logo | relative_url }}" alt="The Metrics Investor Logo" class="site-logo">
             {% endif %}
           </a>
-      
           <p class="site-description">{{ site.description | default: site.github.project_tagline }}</p>
         </div>
       </header>
@@ -44,10 +43,10 @@
         </aside>
       
         <!-- Main Content -->
-        <section class="content">
+        <main class="content">
           {{ content }}
-        </section>
-      </div>
+        </main>
+      </div>     
       
       <footer>
         {% if site.github.is_project_page %}
