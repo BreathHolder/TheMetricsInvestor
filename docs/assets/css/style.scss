@@ -18,30 +18,38 @@ ul li a {
 }
 
 /* Header styling */
-header {
-    display: flex; /* Use flexbox to align the logo and description */
-    align-items: center; /* Vertically center-align content */
-    justify-content: space-between; /* Add space between the logo and description */
+.header-container {
+    display: flex; /* Align logo and description side-by-side */
+    flex-wrap: wrap; /* Allow wrapping if the screen is narrow */
+    align-items: center; /* Center-align items vertically */
+    justify-content: space-between; /* Space out logo and description */
     padding: 20px;
-    background-color: #fff; /* Adjust background color as needed */
+    background-color: #fff;
     border-bottom: 1px solid #ddd;
     max-width: 1200px; /* Constrain header width */
-    margin: 0 auto; /* Center the header horizontally */
+    margin: 0 auto; /* Center the header */
     box-sizing: border-box;
   }
   
-  /* Ensure the logo is constrained */
-  header img {
+  .site-logo {
     max-height: 80px;
-    width: auto; /* Preserve the aspect ratio */
+    width: auto; /* Preserve aspect ratio */
   }
   
-  /* Adjust the main container to fit below the header */
+  .site-description {
+    margin: 0;
+    font-size: 1.1em;
+    color: #555;
+    text-align: left;
+    flex: 1; /* Allow the description to take remaining space */
+  }
+  
+  /* Main container styling */
   .main-container {
     display: flex;
     gap: 20px;
-    max-width: 1200px; /* Constrain the width of the content area */
-    margin: 20px auto; /* Add spacing below the header and center horizontally */
+    max-width: 1200px; /* Constrain width */
+    margin: 20px auto; /* Add spacing below the header */
     box-sizing: border-box;
   }
   
@@ -74,7 +82,7 @@ header {
   .timeline a {
     font-weight: bold;
     text-decoration: none;
-    color: #000; /* Add color for links */
+    color: #000;
   }
   
   .timeline a:hover {
@@ -86,4 +94,4 @@ header {
     color: #6c757d;
     font-size: 0.9em;
   }
-  
+    

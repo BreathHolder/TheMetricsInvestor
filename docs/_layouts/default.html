@@ -15,18 +15,17 @@
   <body>
     <div class="wrapper">
       <header>
-        <h1>
+        <div class="header-container">
           <a href="{{ "/" | absolute_url }}">
             {% if site.logo %}
-            <img src="{{site.logo | relative_url}}" alt="The Metrics Investor Logo" style="max-height: 80px;"/>
+            <img src="{{ site.logo | relative_url }}" alt="The Metrics Investor Logo" class="site-logo">
             {% endif %}
           </a>
-        </h1>
-
-        <p>{{ site.description | default: site.github.project_tagline }}</p>
-
+      
+          <p class="site-description">{{ site.description | default: site.github.project_tagline }}</p>
+        </div>
       </header>
-
+      
       <div class="main-container">
         <!-- Sidebar -->
         <aside class="sidebar">
@@ -34,21 +33,22 @@
           <ul class="timeline">
             {% for post in site.posts %}
               {% if post.date <= site.time %}
-                <li>
-                  <a href="{{ post.url }}">{{ post.title }}</a>
-                  <br>
-                  <small>{{ post.date | date: "%B %d, %Y" }}</small>
-                </li>
+              <li>
+                <a href="{{ post.url }}">{{ post.title }}</a>
+                <br>
+                <small>{{ post.date | date: "%B %d, %Y" }}</small>
+              </li>
               {% endif %}
             {% endfor %}
           </ul>
         </aside>
-
+      
         <!-- Main Content -->
         <section class="content">
           {{ content }}
         </section>
       </div>
+      
       <footer>
         {% if site.github.is_project_page %}
         <p>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
