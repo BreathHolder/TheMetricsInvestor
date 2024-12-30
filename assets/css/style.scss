@@ -2,3 +2,17 @@
 ---
 
 @import "{{ site.theme }}";
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 1rem;
+}
+
+ul li a {
+    font-weight: bold;
+    text-decoration: none;
+}
