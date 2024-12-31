@@ -1,33 +1,57 @@
-<header>
-  <div class="header-container">
-    <a href="{{ "/" | absolute_url }}">
-      {% if site.logo %}
-      <img src="{{ site.logo | relative_url }}" alt="The Metrics Investor Logo" class="site-logo">
-      {% endif %}
-    </a>
-    <p class="site-description">{{ site.description | default: site.github.project_tagline }}</p>
-  </div>
-</header>
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<div class="main-container">
-  <!-- Sidebar -->
-  <aside class="sidebar">
-    <h2>Timeline of Posts</h2>
-    <ul class="timeline">
-      {% for post in site.posts %}
-        {% if post.date <= site.time %}
-        <li>
-          <a href="{{ post.url }}">{{ post.title }}</a>
-          <br>
-          <small>{{ post.date | date: "%B %d, %Y" }}</small>
-        </li>
-        {% endif %}
-      {% endfor %}
-    </ul>
-  </aside>
-
-  <!-- Main Content -->
-  <main class="content">
-    {{ content }}
-  </main>
-</div>
+{% seo %}
+    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+    {% include head-custom.html %}
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <div class="header-container">
+          <a href="{{ "/" | absolute_url }}">
+            {% if site.logo %}
+            <img src="{{ site.logo | relative_url }}" alt="The Metrics Investor Logo" class="site-logo">
+            {% endif %}
+          </a>
+          <p class="site-description">{{ site.description | default: site.github.project_tagline }}</p>
+        </div>
+      </header>
+      
+      <div class="main-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+          <h2>Timeline of Posts</h2>
+          <ul class="timeline">
+            {% for post in site.posts %}
+              {% if post.date <= site.time %}
+              <li>
+                <a href="{{ post.url }}">{{ post.title }}</a>
+                <br>
+                <small>{{ post.date | date: "%B %d, %Y" }}</small>
+              </li>
+              {% endif %}
+            {% endfor %}
+          </ul>
+        </aside>
+      
+        <!-- Main Content -->
+        <main class="content">
+          {{ content }}
+        </main>
+      </div>     
+      
+      <footer>
+        <p><small>Disclaimer: This blog is for informational purposes only and does not constitute financial or investment advice. I am not aware of your specific financial situation, and any investment decision you make should be thoroughly evaluated based on your individual circumstances and risk tolerance.</small></p>
+      </footer>
+    </div>
+    <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+  </body>
+</html>
