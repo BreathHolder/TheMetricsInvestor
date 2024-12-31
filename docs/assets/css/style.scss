@@ -71,6 +71,10 @@ ul li a {
   border: none; /* Remove unintended borders */
 }
 
+.post-sidebar {
+  display: none; /* Hide the sidebar */
+}
+
 /* Main content styling */
 .content {
   flex: 1; /* Allow content to take up the remaining space */
