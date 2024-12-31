@@ -19,95 +19,81 @@ ul li a {
 
 /* Header styling */
 .header-container {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px;
-  background-color: #fff;
-  border-bottom: 1px solid #ddd;
-  max-width: 1200px;
-  margin: 0 auto;
-  box-sizing: border-box;
-  position: sticky;
-  top: 0; /* Keep it at the top */
-  z-index: 1000; /* Ensure it stays above other elements */
-  height: auto; /* Adjust based on header content */
-}
-
-/* Header styling */
-.header-container {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px;
-  background-color: #fff;
-  border-bottom: 1px solid #ddd;
-  max-width: 1200px;
-  margin: 0 auto;
-  box-sizing: border-box;
-  position: relative; /* No sticky behavior */
-  z-index: 1000; /* Ensure header is above content */
-}
-
-/* Main container styling */
-.main-container {
-  display: flex;
-  gap: 20px;
-  max-width: 1200px;
-  margin: 20px auto; /* Center the main container */
-  padding: 20px; /* Add padding inside the container */
-  box-sizing: border-box;
-}
-
-/* Sidebar styling */
-.sidebar {
-  width: 25%;
-  min-width: 250px; /* Prevent shrinking on smaller screens */
-  background-color: #f8f9fa;
-  padding: 15px;
-  border-right: 1px solid #ddd;
-  box-sizing: border-box;
-  height: auto; /* Allow sidebar to grow naturally with content */
-  overflow: visible; /* No sticky or fixed behavior */
-}
-
-/* Main content styling */
-.content {
-  flex: 1; /* Allow content to take up remaining space */
-  box-sizing: border-box;
-  padding-left: 20px; /* Add padding to separate content from the sidebar */
-}
-
-/* Post sidebar (hidden in posts) */
-.post-sidebar {
-  display: none;
-}
-
-/* Timeline list styles */
-.timeline {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-.timeline li {
-  margin-bottom: 10px;
-}
-
-.timeline a {
-  font-weight: bold;
-  text-decoration: none;
-  color: #000;
-}
-
-.timeline a:hover {
-  text-decoration: underline;
-}
-
-.timeline small {
-  display: block;
-  color: #6c757d;
-  font-size: 0.9em;
-}
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    position: sticky; /* Keep the header visible while scrolling */
+    top: 0; /* Stick to the top of the page */
+    z-index: 1000; /* Ensure header is above all other elements */
+  }
+  
+  /* Main container styling */
+  .main-container {
+    display: flex;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 20px auto; /* Center the main container */
+    padding: 20px; /* Add padding inside the container */
+    box-sizing: border-box;
+    z-index: 1; /* Ensure it stays behind the header */
+    position: relative; /* Reset stacking context */
+  }
+  
+  /* Sidebar styling */
+  .sidebar {
+    width: 25%;
+    min-width: 250px; /* Prevent sidebar from shrinking on smaller screens */
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-right: 1px solid #ddd;
+    box-sizing: border-box;
+    height: auto; /* Let the sidebar grow naturally with content */
+    z-index: 0; /* Place sidebar within the normal content flow */
+  }
+  
+  /* Main content styling */
+  .content {
+    flex: 1; /* Allow content to take up the remaining space */
+    box-sizing: border-box;
+    padding-left: 20px; /* Add padding to separate content from the sidebar */
+  }
+  
+  /* Post sidebar (hidden in posts) */
+  .post-sidebar {
+    display: none;
+  }
+  
+  /* Timeline list styles */
+  .timeline {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .timeline li {
+    margin-bottom: 10px;
+  }
+  
+  .timeline a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+  }
+  
+  .timeline a:hover {
+    text-decoration: underline;
+  }
+  
+  .timeline small {
+    display: block;
+    color: #6c757d;
+    font-size: 0.9em;
+  }
+  
