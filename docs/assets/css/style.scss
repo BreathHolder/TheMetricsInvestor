@@ -29,7 +29,9 @@ ul li a {
   max-width: 1200px;
   margin: 0 auto;
   box-sizing: border-box;
-  z-index: 10; /* Ensure header is above other elements */
+  position: sticky;
+  top: 0; /* Keep it at the top */
+  z-index: 1000; /* Ensure it stays above other elements */
 }
 
 .site-logo {
@@ -50,31 +52,34 @@ ul li a {
   display: flex;
   gap: 20px;
   max-width: 1200px;
-  margin: 20px auto; /* Center the main container */
-  padding: 20px; /* Add padding inside the container */
+  margin: 20px auto;
+  padding: 20px;
   box-sizing: border-box;
+  margin-top: 120px; /* Ensure space below the header */
 }
 
+/* Sidebar styling */
 .sidebar {
-  width: 25%; /* Explicitly set the width of the sidebar */
-  min-width: 250px; /* Prevent the sidebar from shrinking too much */
+  width: 25%;
+  min-width: 250px;
   background-color: #f8f9fa;
   padding: 15px;
   border-right: 1px solid #ddd;
   box-sizing: border-box;
-  z-index: 5; /* Ensure sidebar is below the header */
-  position: relative; /* Ensure z-index is applied */
+  height: auto;
+  overflow-y: auto;
 }
 
+/* Post sidebar (hidden in posts) */
 .post-sidebar {
-    display: none; /* Hide the sidebar */
-  }
+  display: none;
+}
 
 /* Main content styling */
 .content {
-  flex: 1; /* Allow content to take up the remaining space */
+  flex: 1;
   box-sizing: border-box;
-  padding-left: 20px; /* Add padding to separate content from the sidebar */
+  padding-left: 20px;
 }
 
 /* Timeline list styles */
