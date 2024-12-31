@@ -45,18 +45,19 @@ ul li a {
   }
   
   /* Main container styling */
-  .main-container {
+.main-container {
     display: flex;
     gap: 20px;
     max-width: 1200px;
-    margin: 20px auto;
-    padding: 20px; /* Add padding to prevent content from touching the edges */
+    margin: 20px auto; /* Center the main container */
+    padding: 20px; /* Add padding inside the container */
     box-sizing: border-box;
   }
   
   /* Sidebar styling */
   .sidebar {
-    flex: 0 0 25%; /* Fix the width of the sidebar */
+    width: 25%; /* Explicitly set the width of the sidebar */
+    min-width: 250px; /* Prevent the sidebar from shrinking too much */
     background-color: #f8f9fa;
     padding: 15px;
     border-right: 1px solid #ddd;
@@ -65,8 +66,9 @@ ul li a {
   
   /* Main content styling */
   .content {
-    flex: 1; /* Allow the content to take up remaining space */
+    flex: 1; /* Allow content to take up the remaining space */
     box-sizing: border-box;
+    padding-left: 20px; /* Add padding to separate content from the sidebar */
   }
   
   /* Timeline list styles */
