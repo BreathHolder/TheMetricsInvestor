@@ -32,30 +32,17 @@ ul li a {
   position: sticky;
   top: 0; /* Keep it at the top */
   z-index: 1000; /* Ensure it stays above other elements */
+  height: auto; /* Adjust based on header content */
 }
 
-.site-logo {
-  max-height: 80px;
-  width: auto;
-}
-
-.site-description {
-  margin: 0;
-  font-size: 1.1em;
-  color: #555;
-  text-align: left;
-  flex: 1;
-}
-
-/* Main container styling */
+/* Ensure there's enough spacing below the header */
 .main-container {
   display: flex;
   gap: 20px;
   max-width: 1200px;
-  margin: 20px auto;
+  margin: 120px auto 20px; /* Push main container down below the sticky header */
   padding: 20px;
   box-sizing: border-box;
-  margin-top: 120px; /* Ensure space below the header */
 }
 
 /* Sidebar styling */
@@ -66,8 +53,7 @@ ul li a {
   padding: 15px;
   border-right: 1px solid #ddd;
   box-sizing: border-box;
-  height: auto;
-  overflow-y: auto;
+  overflow-y: auto; /* Allow scrolling if content exceeds height */
 }
 
 /* Post sidebar (hidden in posts) */
