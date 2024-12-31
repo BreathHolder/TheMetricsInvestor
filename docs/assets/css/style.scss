@@ -44,36 +44,29 @@ ul li a {
   flex: 1;
 }
 
-/* Sidebar styles (only apply when a sidebar is present) */
+/* Main container styling */
+.main-container {
+  display: flex;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 20px auto; /* Center the main container */
+  padding: 20px; /* Add padding inside the container */
+  box-sizing: border-box;
+}
+
+/* Sidebar styling */
 .sidebar {
-  width: 25%;
+  width: 25%; /* Explicitly set the width of the sidebar */
+  min-width: 250px; /* Prevent the sidebar from shrinking too much */
   background-color: #f8f9fa;
   padding: 15px;
   border-right: 1px solid #ddd;
   box-sizing: border-box;
 }
 
-.main-container {
-  display: flex;
-  gap: 20px;
-  max-width: 1200px;
-  margin: 20px auto;
-  padding: 20px;
-  box-sizing: border-box;
-}
-
-/* Remove the default background or border for layouts without the sidebar */
-.post-container {
-  max-width: 800px; /* Constrain width for readability */
-  margin: 20px auto;
-  padding: 20px;
-  background-color: transparent; /* Ensure no background color */
-  border: none; /* Remove unintended borders */
-}
-
 .post-sidebar {
-  display: none; /* Hide the sidebar */
-}
+    display: none; /* Hide the sidebar */
+  }
 
 /* Main content styling */
 .content {
