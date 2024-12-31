@@ -1,12 +1,13 @@
 ---
 layout: post
-title: "Custom Stock Screener Journey: $20K Investment Strategy with Finviz.com"
-description: "Join my five-year journey using a custom stock screener built with Finviz.com. Follow the $20K investment strategy designed to identify high-growth, profitable stocks."
+title: "My Stock Screener Journey: Testing an Investment Strategy with Finviz's Stock Screener"
+description: "Join my five-year journey using a custom stock screener built with Finviz.com. Follow along as I embark on this investment strategy designed to identify high-growth, profitable stocks."
 date: 2024-12-29
-categories: introduction
+tags: finviz, growth investing, managed portfolio, scientific method, investing
+author: Mat Sturdevant
 ---
 
-# Unlocking Market Potential: My Custom Stock Screener Investment Journey
+## Unlocking Market Potential: Embarking on My Stock Screener Investment Journey
 
 Investing can feel like navigating a maze, especially with the overwhelming number of options in the stock market. To simplify the process and make more informed decisions, I developed a custom stock screener using Finviz.com, a trusted platform for stock analysis. This blog marks the beginning of my five-year journey to evaluate the performance of a portfolio built on this screener—starting with an initial investment of $20,000 USD and adding $5,000 USD each month. 
 
