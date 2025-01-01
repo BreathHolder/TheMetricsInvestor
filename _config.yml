@@ -19,7 +19,7 @@ locale                   : "en-US"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
 title                    : "The Metrics Investor" # site title that appears in masthead
 title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
+subtitle                 : "Discover data-driven investment strategies with The Metrics Investor. Follow our journey as we use a custom stock screener to build a high-growth portfolio with consistent monthly updates and actionable insights." # site tagline that appears below site title in masthead
 name                     : "Mat Sturdevant"
 description              : "Discover data-driven investment strategies with The Metrics Investor. Follow our journey as we use a custom stock screener to build a high-growth portfolio with consistent monthly updates and actionable insights."
 url                      : https://themetricsinvestor.buckeltag.com # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
