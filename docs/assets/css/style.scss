@@ -56,7 +56,7 @@ ul li a {
 
 /* Header right (description) */
 .header-right {
-  flex: 1; /* Let the description take up the remaining space */
+  flex: 1 1 0; /* Allow it to shrink when necessary */
   padding-left: 20px; /* Add padding to separate description from logo */
   border: 3px solid #8b008b; /* TESTING ONLY */
 }
