@@ -19,8 +19,8 @@ ul li a {
 
 /* Header styling */
 .header-container {
-    display: block;
-    // flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     padding: 20px;
@@ -48,6 +48,7 @@ ul li a {
   
   /* Sidebar styling */
   .sidebar {
+    display: block; /* Ensure sidebar is displayed as a block element */
     width: 25%;
     min-width: 250px; /* Prevent sidebar from shrinking on smaller screens */
     background-color: #f8f9fa;
