@@ -32,16 +32,14 @@ ul li a {
 /* Header styling */
 .header-container {
   display: flex;
-  flex-direction: row; /* Align logo and description horizontally */
+  flex-wrap: wrap; /* Allow logo and description to stack if necessary */
   align-items: center;
   justify-content: space-between;
   padding: 20px;
   background-color: #fff;
   border-bottom: 1px solid #ddd;
   box-sizing: border-box;
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
+  width: 100%; /* Match the width of the wrapper */
 }
 
 /* Header left (logo) */
@@ -75,20 +73,19 @@ ul li a {
 .main-container {
   display: flex;
   gap: 20px;
-  max-width: 1200px;
-  margin: 20px auto;
+  width: 100%; /* Match the width of the wrapper */
+  margin: 20px 0; /* Add spacing below the header */
   padding: 20px;
-  box-sizing: border-box;
   border: 3px solid #ff0000; /* TESTING ONLY */
 }
 
 /* Sidebar styling */
-.main-container {
-  display: flex;
-  gap: 20px;
-  max-width: 1200px;
-  margin: 20px auto;
-  padding: 20px;
+.sidebar {
+  width: 25%;
+  min-width: 250px; /* Prevent shrinking on smaller screens */
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-right: 1px solid #ddd;
   box-sizing: border-box;
 }
 
