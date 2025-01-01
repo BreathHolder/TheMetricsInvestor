@@ -1,14 +1,16 @@
 ---
-title: "Edge Case: Nested and Mixed Lists"
+layout: post
+title: "Custom Stock Screener Journey: $20K Investment Strategy with Finviz.com"
+description: "Join my five-year journey using a custom stock screener built with Finviz.com. Follow the $20K investment strategy designed to identify high-growth, profitable stocks."
+date: 2024-12-29
 categories:
-  - Edge Case
+  - Growth Investing
 tags:
-  - content
+  - Screener
   - css
   - edge case
   - lists
   - markup
-layout: post
 author_profile: true
 ---
 
