@@ -16,7 +16,7 @@ author: Mat Sturdevant
 
 ## Unlocking Market Potential: My Custom Stock Screener Investment Journey
 
-Investing can feel like navigating a maze, especially with the overwhelming number of options in the stock market. To simplify the process and make more informed decisions, I developed a custom stock screener using **Finviz.com**, a trusted platform for stock analysis. This blog marks the beginning of my five-year journey to evaluate the performance of a portfolio built on this screener—starting with an initial investment of $20,000 USD and adding $5,000 USD each month.
+Investing can feel like navigating a maze, especially with the overwhelming number of options in the stock market. To simplify the process and make more informed decisions, I developed a custom stock screener using **Finviz.com**, a trusted platform for stock analysis. This blog marks the beginning of my five-year journey to evaluate the performance of a simulated portfolio built on this screener—starting with an initial investment of $20,000 USD and adding $5,000 USD each month.
 
 *Disclaimer: This blog is for informational purposes only and does not constitute financial or investment advice. I am not aware of your specific financial situation, and any investment decision you make should be thoroughly evaluated based on your individual circumstances and risk tolerance.*
 
@@ -38,6 +38,8 @@ My stock screener is designed to identify companies with strong fundamentals and
     * Confirms the company’s historical ability to deliver consistent earnings growth.
 7. **Net Profit Margin**: Over 10%
     * Focus on businesses that maintain healthy profitability, translating to stronger bottom lines.
+
+You can run [this screener](https://finviz.com/screener.ashx?v=111&f=fa_eps5years_o15,fa_estltgrowth_o15,fa_ltdebteq_u1,fa_netmargin_o10,fa_peg_low,fa_roe_o15,fa_sales5years_u15&ft=2) yourself on Finviz.com.
 
 ## Why These Criteria Matter
 
