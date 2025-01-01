@@ -1,22 +1,16 @@
-- - -
-
+---
 layout: posts
 title: "Custom Stock Screener Journey: $20K Investment Strategy with Finviz.com"
 description: "Join my five-year journey using a custom stock screener built with Finviz.com. Follow the $20K investment strategy designed to identify high-growth, profitable stocks."
 date: 2024-12-31
-
-# categories: Rule-Based-Growth-Investing-Journey
-
 tags:
-
-* Screener
-* Experiment
-* Growth Investing
-* Series
-* Finviz
+  - Screener
+  - Experiment
+  - Growth Investing
+  - Series
+  - Finviz
 author: Mat Sturdevant
-
-- - -
+---
 
 ![image](../assets/images/post_header_themed_1920s_woman_reding_studying_learning.jpg)
 
