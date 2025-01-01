@@ -66,9 +66,3 @@ If you’re looking to simplify your stock-picking process or just curious about
 ## Stay Tuned for Updates
 
 As I embark on this investment journey, I invite you to join me. Bookmark the site and follow along monthly to receive regular updates on portfolio performance, insights into the stock screener’s effectiveness, and tips for applying similar strategies in your investments. Together, let’s explore the power of systematic investing.
-
----
-
-**SEO Meta-Title**: "Custom Stock Screener Journey: $20K Investment Strategy with Finviz.com"
-
-**Meta Description**: "Join my five-year journey using a custom stock screener built with Finviz.com. Follow the $20K investment strategy designed to identify high-growth, profitable stocks."
