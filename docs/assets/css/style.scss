@@ -44,6 +44,7 @@ ul li a {
 /* Header left (logo) */
 .header-left {
   flex: 0 0 auto; /* Keep the logo at its natural size */
+  border: 3px solid #567775; /* TESTING ONLY */
 }
 
 /* Site logo styling */
@@ -56,6 +57,7 @@ ul li a {
 /* Header right (description) */
 .header-right {
   flex: 1; /* Let the description take up the remaining space */
+  border: 3px solid #429b96; /* TESTING ONLY */
 }
 
 /* Site description styling */

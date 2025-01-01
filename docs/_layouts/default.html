@@ -15,20 +15,18 @@
   <body>
     <div class="wrapper">
       <!-- Header -->
-      <header>
-        <div class="header-container">
-          <div class="header-left">
-            <a href="{{ "/" | absolute_url }}">
-              {% if site.logo %}
-              <img src="{{ site.logo | relative_url }}" alt="The Metrics Investor Logo" class="site-logo">
-              {% endif %}
-            </a>
-          </div>
-          <div class="header-right">
-            <p class="site-description">
-              {{ site.description | default: site.github.project_tagline }}
-            </p>
-          </div>
+      <header class="header-container">
+        <div class="header-left">
+          <a href="{{ "/" | absolute_url }}">
+            {% if site.logo %}
+            <img src="{{ site.logo | relative_url }}" alt="The Metrics Investor Logo" class="site-logo">
+            {% endif %}
+          </a>
+        </div>
+        <div class="header-right">
+          <p class="site-description">
+            {{ site.description | default: site.github.project_tagline }}
+          </p>
         </div>
       </header>
     
