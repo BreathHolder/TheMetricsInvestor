@@ -19,30 +19,59 @@ ul li a {
 
 .wrapper {
   display: flex;
-  flex-direction: column; /* Ensure header stacks above the main content */
+  flex-direction: column; /* Stack header and content vertically */
+  width: 100%;
 }
+
+/******* HEADER STYLING *******/
 
 /* Header styling */
 .header-container {
   display: flex;
-  flex-wrap: wrap; /* Allow items to stack if needed */
+  flex-wrap: wrap; /* Allow the logo and description to adjust on smaller screens */
   align-items: center;
-  justify-content: space-between;
   padding: 20px;
   background-color: #fff;
   border-bottom: 1px solid #ddd;
+  box-sizing: border-box;
   max-width: 1200px;
   margin: 0 auto;
-  box-sizing: border-box;
-  z-index: 1000;
+  gap: 20px; /* Space between logo and description */
 }
+
+/* Header left (logo) */
+.header-left {
+  flex: 0 0 auto; /* Keep the logo at its natural size */
+}
+
+/* Site logo styling */
+.site-logo {
+  max-height: 80px;
+  width: auto;
+  display: block;
+}
+
+/* Header right (description) */
+.header-right {
+  flex: 1; /* Let the description take up the remaining space */
+}
+
+/* Site description styling */
+.site-description {
+  margin: 0;
+  font-size: 1.1em;
+  color: #555;
+  text-align: left;
+}
+
+/******* MAIN CONTAINER STYLING *******/
 
 /* Main container styling */
 .main-container {
   display: flex;
   gap: 20px;
   max-width: 1200px;
-  margin: 20px auto; /* Add spacing below the header */
+  margin: 20px auto;
   padding: 20px;
   box-sizing: border-box;
 }
@@ -62,23 +91,6 @@ ul li a {
   flex: 1; /* Allow content to take up remaining space */
   box-sizing: border-box;
   padding-left: 20px; /* Add padding to separate content from the sidebar */
-}
-
-/* Site logo styling */
-.site-logo {
-  max-height: 80px;
-  width: auto;
-  display: block; /* Ensure logo takes up its own block */
-  margin-bottom: 10px; /* Space below the logo */
-}
-
-/* Site description styling */
-.site-description {
-  margin: 0;
-  font-size: 1.1em;
-  color: #555;
-  flex: 1 1 100%; /* Force description to full width below the logo */
-  text-align: left;
 }
 
 /* Post sidebar (hidden in posts) */
