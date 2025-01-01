@@ -1,17 +1,24 @@
----
+- - -
+
 layout: posts
 title: "Custom Stock Screener Journey: $20K Investment Strategy with Finviz.com"
 description: "Join my five-year journey using a custom stock screener built with Finviz.com. Follow the $20K investment strategy designed to identify high-growth, profitable stocks."
-date: 2024-12-29
+date: 2024-12-31
+
 # categories: Rule-Based-Growth-Investing-Journey
+
 tags:
-  - Screener
-  - Experiment
-  - Growth Investing
-  - Series
-  - Finviz
+
+* Screener
+* Experiment
+* Growth Investing
+* Series
+* Finviz
 author: Mat Sturdevant
----
+
+- - -
+
+![image](../assets/images/post_header_themed_1920s_woman_reding_studying_learning.jpg)
 
 ## Unlocking Market Potential: My Custom Stock Screener Investment Journey
 
@@ -24,30 +31,30 @@ Investing can feel like navigating a maze, especially with the overwhelming numb
 My stock screener is designed to identify companies with strong fundamentals and significant growth potential. By setting specific filters on Finviz.com, I’ve ensured that the screener highlights stocks with a balanced mix of growth, profitability, and financial health. Here are the rules that guide the screener:
 
 1. **EPS Growth in the Next 5 Years**: Over 15%
-   - Focus on companies with robust growth projections to align with long-term investment goals.
+    * Focus on companies with robust growth projections to align with long-term investment goals.
 2. **Long-Term Debt-to-Equity Ratio**: Under 1
-   - Preference for companies with manageable debt levels, ensuring financial stability.
+    * Preference for companies with manageable debt levels, ensuring financial stability.
 3. **Sales Growth Over the Past 5 Years**: Under 15%
-   - Targeting steady but not overly aggressive growth to avoid highly volatile companies.
+    * Targeting steady but not overly aggressive growth to avoid highly volatile companies.
 4. **Return on Equity (ROE)**: Over 15%
-   - Emphasis on companies with efficient management and strong profitability.
+    * Emphasis on companies with efficient management and strong profitability.
 5. **Price-to-Earnings-to-Growth (PEG)**: Less than 1
-   - Ensures the stock is undervalued relative to its growth potential, providing an opportunity for outsized returns.
+    * Ensures the stock is undervalued relative to its growth potential, providing an opportunity for outsized returns.
 6. **EPS Growth Over the Past 5 Years**: Over 15%
-   - Confirms the company’s historical ability to deliver consistent earnings growth.
+    * Confirms the company’s historical ability to deliver consistent earnings growth.
 7. **Net Profit Margin**: Over 10%
-   - Focus on businesses that maintain healthy profitability, translating to stronger bottom lines.
+    * Focus on businesses that maintain healthy profitability, translating to stronger bottom lines.
 
 ## Why These Criteria Matter
 
 Each rule in this screener is designed to filter out noise and zero in on companies with solid fundamentals. Here’s why these metrics are important:
 
-- **EPS Growth**: A high EPS growth rate indicates a company’s ability to increase its profitability over time, signaling strong potential for capital appreciation.
-- **Debt-to-Equity Ratio**: A lower ratio means the company is not over-leveraged, reducing the risk of financial distress during economic downturns.
-- **Sales Growth**: Companies with controlled sales growth are often more stable and less prone to overexpansion.
-- **ROE**: High ROE shows that a company uses its equity efficiently to generate profit.
-- **PEG Ratio**: A low PEG ratio suggests the stock is undervalued, offering a favorable risk-reward balance.
-- **Net Profit Margin**: Higher margins indicate better operational efficiency and profitability, crucial for sustainable growth.
+* **EPS Growth**: A high EPS growth rate indicates a company’s ability to increase its profitability over time, signaling strong potential for capital appreciation.
+* **Debt-to-Equity Ratio**: A lower ratio means the company is not over-leveraged, reducing the risk of financial distress during economic downturns.
+* **Sales Growth**: Companies with controlled sales growth are often more stable and less prone to overexpansion.
+* **ROE**: High ROE shows that a company uses its equity efficiently to generate profit.
+* **PEG Ratio**: A low PEG ratio suggests the stock is undervalued, offering a favorable risk-reward balance.
+* **Net Profit Margin**: Higher margins indicate better operational efficiency and profitability, crucial for sustainable growth.
 
 ## My Investment Strategy
 
