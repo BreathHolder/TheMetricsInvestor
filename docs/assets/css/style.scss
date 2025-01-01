@@ -34,18 +34,16 @@ ul li a {
   justify-content: space-between;
   padding: 20px;
   background-color: #fff;
-  // border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
   box-sizing: border-box;
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  border: 3px solid #000000; /* TESTING ONLY */
 }
 
 /* Header left (logo) */
 .header-left {
   flex: 0 0 auto; /* Keep the logo at its natural size */
-  border: 3px solid #567775; /* TESTING ONLY */
 }
 
 /* Site logo styling */
@@ -58,7 +56,6 @@ ul li a {
 .header-right {
   flex: 1; /* Let the description take up the remaining space */
   padding-left: 20px; /* Add padding to separate description from logo */
-  border: 3px solid #429b96; /* TESTING ONLY */
 }
 
 /* Site description styling */
