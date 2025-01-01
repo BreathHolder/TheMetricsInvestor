@@ -8,7 +8,7 @@ tags:
   - edge case
   - lists
   - markup
-layout: post
+layout: posts
 author_profile: true
 ---
 
