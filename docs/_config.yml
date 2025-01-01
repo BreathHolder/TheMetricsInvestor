@@ -2,5 +2,5 @@ title: The Metrics Investor
 description: Discover data-driven investment strategies with The Metrics Investor. Follow our journey as we use a custom stock screener to build a high-growth portfolio with consistent monthly updates and actionable insights.
 url: http://themetricsinvestor.buckeltag.com
 baseurl: ""
-theme: jekyll-theme-minimal
 logo: /assets/images/logo.png
+remote_theme: "mmistakes/minimal-mistakes@4.26.2"
