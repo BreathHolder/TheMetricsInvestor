@@ -17,17 +17,23 @@ ul li a {
   text-decoration: none;
 }
 
+.wrapper {
+  display: flex;
+  flex-direction: column; /* Ensure header stacks above the main content */
+}
+
 /* Header styling */
 .header-container {
-  display: block; /* Use block layout to allow content to stack naturally */
+  display: flex;
+  flex-wrap: wrap; /* Allow items to stack if needed */
+  align-items: center;
+  justify-content: space-between;
   padding: 20px;
   background-color: #fff;
   border-bottom: 1px solid #ddd;
   max-width: 1200px;
   margin: 0 auto;
   box-sizing: border-box;
-  position: sticky; /* Keep the header visible */
-  top: 0;
   z-index: 1000;
 }
 
@@ -36,22 +42,19 @@ ul li a {
   display: flex;
   gap: 20px;
   max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px; /* Add padding inside the container */
+  margin: 20px auto; /* Add spacing below the header */
+  padding: 20px;
   box-sizing: border-box;
-  margin-top: 20px; /* Add spacing between header and main content */
 }
 
 /* Sidebar styling */
 .sidebar {
   width: 25%;
-  min-width: 250px; /* Prevent sidebar from shrinking on smaller screens */
+  min-width: 250px;
   background-color: #f8f9fa;
   padding: 15px;
   border-right: 1px solid #ddd;
   box-sizing: border-box;
-  height: auto;
-  z-index: 0; /* Place sidebar within the normal content flow */
 }
 
 /* Main content styling */
@@ -65,8 +68,8 @@ ul li a {
 .site-logo {
   max-height: 80px;
   width: auto;
-  display: block; /* Ensure logo appears as its own block */
-  margin-bottom: 10px; /* Add space below the logo */
+  display: block; /* Ensure logo takes up its own block */
+  margin-bottom: 10px; /* Space below the logo */
 }
 
 /* Site description styling */
@@ -74,6 +77,7 @@ ul li a {
   margin: 0;
   font-size: 1.1em;
   color: #555;
+  flex: 1 1 100%; /* Force description to full width below the logo */
   text-align: left;
 }
 
