@@ -1,12 +1,6 @@
 # main links
 main:
-  # - title: "Quick-Start Guide"
-  #   url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-  # - title: "About"
-  #   url: https://mmistakes.github.io/minimal-mistakes/about/
-  # - title: "Latest Posts"
-  #   url: /blog/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
+  - title: Growth Investing for Everyone
+    children:
+      - title: "Custom Stock Screener Journey: Part 1"
+        url: /_posts/2024-12-31-rule-based-growth-investing-journey-part-01.md
