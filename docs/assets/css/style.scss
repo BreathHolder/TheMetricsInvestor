@@ -19,8 +19,11 @@ ul li a {
 
 .wrapper {
   display: flex;
-  flex-direction: column; /* Stack header and content vertically */
+  flex-direction: column; /* Ensure header and main content are stacked */
   width: 100%;
+  max-width: 1200px; /* Constrain the entire page to this width */
+  margin: 0 auto; /* Center the wrapper */
+  box-sizing: border-box;
   border: 3px solid #008b2a; /* TESTING ONLY */
 }
 
