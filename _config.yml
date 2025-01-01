@@ -314,7 +314,7 @@ compress_html:
 defaults:
   # _posts
   - scope:
-      path: "/docs/_posts"
+      path: ""
       type: posts
     values:
       layout: single
@@ -323,3 +323,15 @@ defaults:
       comments: # true
       share: true
       related: true
+  # _recipes
+  - scope:
+      path: ""
+      type: recipes
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: # true
+      share: true
+      related: true
+
