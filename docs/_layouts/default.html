@@ -26,29 +26,28 @@
           </p>
         </div>
       </header>
-      
+    
       <div class="main-container">
         <!-- Sidebar -->
         <aside class="sidebar">
           <h2>Timeline of Posts</h2>
           <ul class="timeline">
             {% for post in site.posts %}
-              {% if post.date <= site.time %}
-              <li>
-                <a href="{{ post.url }}">{{ post.title }}</a>
-                <br>
-                <small>{{ post.date | date: "%B %d, %Y" }}</small>
-              </li>
-              {% endif %}
+            <li>
+              <a href="{{ post.url }}">{{ post.title }}</a>
+              <br>
+              <small>{{ post.date | date: "%B %d, %Y" }}</small>
+            </li>
             {% endfor %}
           </ul>
         </aside>
-      
+    
         <!-- Main Content -->
         <main class="content">
           {{ content }}
         </main>
-      </div>     
+      </div>
+    </div>  
       
       <footer>
         <p><small>Disclaimer: This blog is for informational purposes only and does not constitute financial or investment advice. I am not aware of your specific financial situation, and any investment decision you make should be thoroughly evaluated based on your individual circumstances and risk tolerance.</small></p>

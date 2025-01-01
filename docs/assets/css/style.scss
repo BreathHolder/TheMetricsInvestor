@@ -19,20 +19,16 @@ ul li a {
 
 /* Header styling */
 .header-container {
-  display: flex;
-  flex-wrap: wrap; /* Allow items to wrap if they don't fit in one row */
-  align-items: center;
-  justify-content: space-between;
+  display: block; /* Use block layout to allow content to stack naturally */
   padding: 20px;
   background-color: #fff;
   border-bottom: 1px solid #ddd;
   max-width: 1200px;
   margin: 0 auto;
   box-sizing: border-box;
-  position: sticky;
+  position: sticky; /* Keep the header visible */
   top: 0;
   z-index: 1000;
-  height: auto; /* Ensure height adjusts to content */
 }
 
 /* Main container styling */
@@ -41,34 +37,36 @@ ul li a {
   gap: 20px;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 20px; /* Add padding to separate from header */
-  padding-top: 140px; /* Adjust this based on the height of the header */
+  padding: 20px; /* Add padding inside the container */
   box-sizing: border-box;
+  margin-top: 20px; /* Add spacing between header and main content */
 }
 
 /* Sidebar styling */
 .sidebar {
   width: 25%;
-  min-width: 250px;
+  min-width: 250px; /* Prevent sidebar from shrinking on smaller screens */
   background-color: #f8f9fa;
   padding: 15px;
   border-right: 1px solid #ddd;
   box-sizing: border-box;
   height: auto;
-  z-index: 0; /* Place sidebar in the normal content flow */
+  z-index: 0; /* Place sidebar within the normal content flow */
 }
 
 /* Main content styling */
 .content {
   flex: 1; /* Allow content to take up remaining space */
   box-sizing: border-box;
-  padding-left: 20px;
+  padding-left: 20px; /* Add padding to separate content from the sidebar */
 }
 
 /* Site logo styling */
 .site-logo {
   max-height: 80px;
   width: auto;
+  display: block; /* Ensure logo appears as its own block */
+  margin-bottom: 10px; /* Add space below the logo */
 }
 
 /* Site description styling */
@@ -76,7 +74,6 @@ ul li a {
   margin: 0;
   font-size: 1.1em;
   color: #555;
-  flex: 1 1 100%; /* Ensure it spans the full width below the logo */
   text-align: left;
 }
 
@@ -111,4 +108,3 @@ ul li a {
   color: #6c757d;
   font-size: 0.9em;
 }
-
